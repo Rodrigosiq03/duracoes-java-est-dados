@@ -121,55 +121,55 @@ public class Vetores {
             gravarArq.printf("Média das durações: " + (duracoes.stream().mapToLong(Long::longValue).sum() / duracoes.size()));
             gravarArq.close();
         }
-        for (int i = 0; i < vetores.length; i++) {
-            duracoes.clear();
-            System.out.println("Gerando " + vetores[i] + " vetores");
-            String nome_arquivo = "insertion_" + vetores[i] + ".txt";
-            File arquivo = new File(path + nome_arquivo);
-            if (arquivo.exists()) {
-                arquivo.delete();
-            }
-            FileWriter writer = new FileWriter(arquivo, true);
-            PrintWriter gravarArq = new PrintWriter(writer);
-            gravarArq.printf("Duracoes do InsertionSort para " + vetores[i] + " vetores: ");
-            for (int j = 0; j < n_vetores; j++) {
-                int[] v = new int[vetores[i]];
-                geraVetor(v);
-                Date inicio = new Date();
-                insertionSort(v);
-                Date fim = new Date();
-                long duracao = fim.getTime() - inicio.getTime();
-                duracoes.add(duracao);
-                gravarArq.printf(duracao + " ");
-            }
-            gravarArq.printf("\n");
-            gravarArq.printf("Média das durações: " + (duracoes.stream().mapToLong(Long::longValue).sum() / duracoes.size()));
-            gravarArq.close();
-        }
-        for (int i = 0; i < vetores_grandes.length; i++) {
-            System.out.println("Gerando " + vetores_grandes[i] + " vetores");
-            String nome_arquivo = "insertion_" + vetores_grandes[i] + ".txt";
-            File arquivo = new File(path + nome_arquivo);
-            if (arquivo.exists()) {
-                arquivo.delete();
-            }
-            FileWriter writer = new FileWriter(arquivo, true);
-            PrintWriter gravarArq = new PrintWriter(writer);
-            gravarArq.printf("Duracoes do InsertionSort para " + vetores_grandes[i] + " vetores: ");
-            for (int j = 0; j < n_vetores_grandes; j++) {
-                int[] v = new int[vetores_grandes[i]];
-                geraVetor(v);
-                Date inicio = new Date();
-                insertionSort(v);
-                Date fim = new Date();
-                long duracao = fim.getTime() - inicio.getTime();
-                duracoes.add(duracao);
-                gravarArq.printf(duracao + " ");
-            }
-            gravarArq.printf("\n");
-            gravarArq.printf("Média das durações: " + (duracoes.stream().mapToLong(Long::longValue).sum() / duracoes.size()));
-            gravarArq.close();
-        }
+        // for (int i = 0; i < vetores.length; i++) {
+        //     duracoes.clear();
+        //     System.out.println("Gerando " + vetores[i] + " vetores");
+        //     String nome_arquivo = "insertion_" + vetores[i] + ".txt";
+        //     File arquivo = new File(path + nome_arquivo);
+        //     if (arquivo.exists()) {
+        //         arquivo.delete();
+        //     }
+        //     FileWriter writer = new FileWriter(arquivo, true);
+        //     PrintWriter gravarArq = new PrintWriter(writer);
+        //     gravarArq.printf("Duracoes do InsertionSort para " + vetores[i] + " vetores: ");
+        //     for (int j = 0; j < n_vetores; j++) {
+        //         int[] v = new int[vetores[i]];
+        //         geraVetor(v);
+        //         Date inicio = new Date();
+        //         insertionSort(v);
+        //         Date fim = new Date();
+        //         long duracao = fim.getTime() - inicio.getTime();
+        //         duracoes.add(duracao);
+        //         gravarArq.printf(duracao + " ");
+        //     }
+        //     gravarArq.printf("\n");
+        //     gravarArq.printf("Média das durações: " + (duracoes.stream().mapToLong(Long::longValue).sum() / duracoes.size()));
+        //     gravarArq.close();
+        // }
+        // for (int i = 0; i < vetores_grandes.length; i++) {
+        //     System.out.println("Gerando " + vetores_grandes[i] + " vetores");
+        //     String nome_arquivo = "insertion_" + vetores_grandes[i] + ".txt";
+        //     File arquivo = new File(path + nome_arquivo);
+        //     if (arquivo.exists()) {
+        //         arquivo.delete();
+        //     }
+        //     FileWriter writer = new FileWriter(arquivo, true);
+        //     PrintWriter gravarArq = new PrintWriter(writer);
+        //     gravarArq.printf("Duracoes do InsertionSort para " + vetores_grandes[i] + " vetores: ");
+        //     for (int j = 0; j < n_vetores_grandes; j++) {
+        //         int[] v = new int[vetores_grandes[i]];
+        //         geraVetor(v);
+        //         Date inicio = new Date();
+        //         insertionSort(v);
+        //         Date fim = new Date();
+        //         long duracao = fim.getTime() - inicio.getTime();
+        //         duracoes.add(duracao);
+        //         gravarArq.printf(duracao + " ");
+        //     }
+        //     gravarArq.printf("\n");
+        //     gravarArq.printf("Média das durações: " + (duracoes.stream().mapToLong(Long::longValue).sum() / duracoes.size()));
+        //     gravarArq.close();
+        // }
         for (int i = 0; i < vetores.length; i++) {
             duracoes.clear();
             System.out.println("Gerando " + vetores[i] + " vetores");

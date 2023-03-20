@@ -21,3 +21,6 @@ Integrantes do Grupo:
    diferenças entre as médias e seus correspondentes tempos de execução. Após esta inspeção, concluimos que o método de 
    ordenação que possuia as menores médias, será necessariamente o mais eficiente, que no caso seria o InsertionSort, justamente
    por destacar-se com suas médias menores e tempo de execução(m/s), equiparados com os demais analisados.
+   
+   
+   Sujeito a alterações.

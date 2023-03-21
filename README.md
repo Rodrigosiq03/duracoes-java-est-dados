@@ -8,7 +8,7 @@ Integrantes do Grupo:
   - Gabriel Parmigiano - 22.01589-2
   - Rodrigo Diana  Siqueira - 22.00680-0
   - Luigi Guimarães Trevisan - 22.01102-0
-  - Dimitri - 22.
+  - Dimitri Zenaro Bastos de Oliveira - 22.00820-9
   
   
   
@@ -20,7 +20,14 @@ Integrantes do Grupo:
    na análise da planilha de vetores e os resultados obtidos a partir dela, conseguimos identificar
    diferenças entre as médias e seus correspondentes tempos de execução. Após esta inspeção, concluimos que o método de 
    ordenação que possuia as menores médias, será necessariamente o mais eficiente, que no caso seria o InsertionSort, justamente
-   por destacar-se com suas médias menores e tempo de execução(m/s), equiparados com os demais analisados.
+   por destacar-se com suas médias menores e tempo de execução(m/s), equiparados com os demais analisados. Dada esta conclusão, verificamos que
+   todos os métodos de ordenação analizados, são de extrema importância para o conhecimento sobre Estrutura de Dados, mas cada um com sua utilização em 
+   diferentes momentos.
+   
+   
+   
+   
+   
    
    
    Sujeito a alterações.
